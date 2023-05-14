@@ -41,8 +41,9 @@ public class User {
 		this.password = password;
 		this.roles = roles;
 	}
-	
-	// To overcome PersistentObjectException (while trying to persist detached entity)
+
+	// To overcome PersistentObjectException (while trying to persist detached
+	// entity)
 	@ManyToMany(cascade = CascadeType.MERGE, fetch = FetchType.EAGER)
 	@JoinTable(name = "users_roles", joinColumns = @JoinColumn(name = "user_id"), inverseJoinColumns = @JoinColumn(name = "role_id"))
 	private List<Role> roles = new ArrayList<>();

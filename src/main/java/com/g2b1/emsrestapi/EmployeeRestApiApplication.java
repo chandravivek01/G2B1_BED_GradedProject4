@@ -9,6 +9,8 @@ public class EmployeeRestApiApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(EmployeeRestApiApplication.class, args);
+		System.out.println("\nEmployee Management REST API at work ...");
+		System.out.println("\nGo to Postman and hit the appropriate URLs ...\n");
 	}
 
 }

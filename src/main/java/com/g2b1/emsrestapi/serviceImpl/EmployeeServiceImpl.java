@@ -16,22 +16,22 @@ public class EmployeeServiceImpl implements EmployeeService {
 
 	@Autowired
 	private EmployeeRepository employeeRepository;
-	
+
 	@Override
 	public void saveEmployee(Employee employee) {
-		
+
 		employeeRepository.saveAndFlush(employee);
 	}
 
 	@Override
 	public List<Employee> viewAllEmployees() {
-		
+
 		return employeeRepository.findAll();
 	}
 
 	@Override
 	public Employee findEmployeeById(long id) {
-		
+
 		return employeeRepository.findById(id).get();
 	}
 
@@ -43,7 +43,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 
 	@Override
 	public List<Employee> listEmployeesByFirstname(String firstname) {
-	
+
 		return employeeRepository.findEmployeeByFirstname(firstname);
 	}
 

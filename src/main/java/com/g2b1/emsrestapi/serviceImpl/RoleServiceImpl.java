@@ -11,20 +11,20 @@ import com.g2b1.emsrestapi.repository.RoleRepository;
 import com.g2b1.emsrestapi.service.RoleService;
 
 @Service
-public class RoleServiceImpl implements RoleService{
+public class RoleServiceImpl implements RoleService {
 
 	@Autowired
 	RoleRepository roleRepository;
-	
+
 	@Override
 	public void save(Role role) {
-		
+
 		roleRepository.save(role);
 	}
 
 	@Override
 	public List<Role> viewAllRoles() {
-		
+
 		return roleRepository.findAll();
 	}
 

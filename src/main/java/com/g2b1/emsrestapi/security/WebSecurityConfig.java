@@ -41,7 +41,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
-		
+
 		// Only ADMIN can Save, Update and Delete Employee Record
 		http.authorizeRequests().antMatchers(HttpMethod.DELETE, "/api/employees/{id}").hasAuthority("ADMIN")
 				.antMatchers("/api/employees/save", "/api/employees/update").hasAuthority("ADMIN")
