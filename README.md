@@ -26,7 +26,7 @@ Running the Application:
 1. Run EmployeeRestApiApplication.java, as Java Application
     path to the above file: /EmployeeRestApi/src/main/java/com/g2b1/emsrestapi/EmployeeRestApiApplication.java
 
-**Important: Comment out **".and().httpBasic()"** in configure(HttpSecurity http) method to disable Authentication in the Beginning Phase of Project. 
+**Important:** Comment out **".and().httpBasic()"** in configure(HttpSecurity http) method to disable Authentication in the Beginning Phase of Project. 
 file path: /EmployeeRestApi/src/main/java/com/g2b1/emsrestapi/security/WebSecurityConfig.java
 
 2. i. Add Roles into the database.
@@ -50,7 +50,7 @@ file path: /EmployeeRestApi/src/main/java/com/g2b1/emsrestapi/security/WebSecuri
             }]
         }
 
-**Important: Enable Authentication(Basic Authorization), undo commenting **".and().httpBasic()"** in configure(HttpSecurity http) method 
+**Important:** Enable Authentication(Basic Authorization), undo commenting **".and().httpBasic()"** in configure(HttpSecurity http) method 
 file path: /EmployeeRestApi/src/main/java/com/g2b1/emsrestapi/security/WebSecurityConfig.java
 
 3. Saving Employee Record
