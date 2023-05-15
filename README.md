@@ -26,11 +26,16 @@ Running the Application:
 1. Run EmployeeRestApiApplication.java, as Java Application
     path to the above file: /EmployeeRestApi/src/main/java/com/g2b1/emsrestapi/EmployeeRestApiApplication.java
 
-**Important:** Comment out **".and().httpBasic()"** in configure(HttpSecurity http) method to disable Authentication in the Beginning Phase of Project. 
+**Important:** 
+
+**From the Backend**
+Comment out **".and().httpBasic()"** in configure(HttpSecurity http) method to disable Authentication in the Beginning Phase of the Project as there will be no roles and users in the MySQL database initially.
+
 file path: /EmployeeRestApi/src/main/java/com/g2b1/emsrestapi/security/WebSecurityConfig.java
 
 **OR**
 
+**From Postman**
 Select **No-Auth** in Postman and start adding roles and users and once done, now can switch to **Basic-Authorization** in Postman to further test the APIs 
 
 2. i. Add Roles into the database.
