@@ -29,6 +29,10 @@ Running the Application:
 **Important:** Comment out **".and().httpBasic()"** in configure(HttpSecurity http) method to disable Authentication in the Beginning Phase of Project. 
 file path: /EmployeeRestApi/src/main/java/com/g2b1/emsrestapi/security/WebSecurityConfig.java
 
+**OR**
+
+Select **No-Auth** in Postman and start adding roles and users and once done, now can switch to **Basic-Authorization** in Postman to further test the APIs 
+
 2. i. Add Roles into the database.
         url: http://localhost/registration/addrole - POST Request
         
